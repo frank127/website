@@ -152,8 +152,8 @@
     <div class="slider-inner">
         <div id="da-slider" class="da-slider">
             <div class="da-slide">
-                <h2><i>CLEAN &amp; FRESH</i> <br /> <i>FULLY RESPONSIVE</i> <br /> <i>DESIGN</i></h2>
-                <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i></p>
+                <h2><i>Best Mortgage</i> <br /> <i>Rate & Right</i> <br /> <i>Mortgage Advice</i></h2>
+                <p><i>As Mortgage Brokers</i> <br /> <i>We work for you</i> <br /> <i>not the banks </i></p>
                 <div class="da-img"><img class="img-responsive" src="assets/plugins/parallax-slider/img/1.png" alt=""></div>
             </div>
             <div class="da-slide">
@@ -178,18 +178,31 @@
 
     <!--=== Purchase Block ===-->
     <div class="purchase">
+    <form id="frmFullApplication" action="https://application.mortgageweb.ca/dhonlineapplicationNew.aspx" method="post" target="_blank">
+        <input id="firmcode" name="firmcode" type="hidden" value="VECM" />
+        <input id="dhagentid" name="dhagentid" type="hidden" value="WANGF" />
+        <input id="lenderlogo" name="lenderlogo" type="hidden" value="" />
+        <input id="dhagentemail" name="dhagentemail" type="hidden" value="frank.wang@ecmortgagegroup.com" />
+        <input id="dhagentfullname" name="dhagentfullname" type="hidden" value="Frank Wang" />
+        <input id="dhagentphone" name="dhagentphone" type="hidden" value="647.291.4609" />
+        <input id="dhagentcompanyname" name="dhagentcompanyname" type="hidden" value="Verico Elite Choice Mortgage Group" />
+        <input id="dhagentlicenceno" name="dhagentlicenceno" type="hidden" value="M15000620" />
+    </form>
         <div class="container">
             <div class="row">
                 <div class="col-md-9 animated fadeInLeft">
-                    <span>Unify is a clean and fully responsive incredible Template.</span>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.</p>
+                    <span>Apply for a mortgage</span>
+                    <p>Complete and submit a secure online Pre-Approval or Mortgage Application<br>
+                    or you can click <a href="#">here</a> to download an application form and fax to us.</p>
                 </div>            
                 <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="#" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Download Now</a>
+                    <a href="javascript:void(0);" onclick="submitApplication();" class="btn-u btn-u-lg"><i class="fa fa-pencil"></i> Apply Online</a>
                 </div>
             </div>
         </div>
     </div><!--/row-->
+    
+
     <!-- End Purchase Block -->
 
     <!--=== Content Part ===-->
@@ -535,6 +548,12 @@
         ParallaxSlider.initParallaxSlider();
     });
 </script>
+<script language="javascript" type="text/javascript">
+    function submitApplication() {
+        $('#frmFullApplication').submit();
+    }
+</script>
+
 <!--[if lt IE 9]>
     <script src="assets/plugins/respond.js"></script>
     <script src="assets/plugins/html5shiv.js"></script>
