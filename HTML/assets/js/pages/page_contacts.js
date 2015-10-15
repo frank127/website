@@ -9,14 +9,17 @@ var ContactPage = function () {
 			  map = new GMaps({
 				div: '#map',
 				scrollwheel: false,				
-				lat: 40.748866,
-				lng: -73.988366
+				lat: 43.814930,
+				lng: -79.349759
 			  });
 			  
 			  var marker = map.addMarker({
-				lat: 40.748866,
-				lng: -73.988366,
-	            title: 'Company, Inc.'
+				lat: 43.814930,
+				lng: -79.349759,
+	            title: 'Verico Elite Choice Mortgage Group',
+                infoWindow: {
+                    content: '<p><b>Verico Elite Choice Mortgage Group</b><br />7050 Woodbine Ave, Suite 101<br />Markham ON L3R 4G8</p>'
+                }
 		       });
 			});
         },
@@ -27,8 +30,8 @@ var ContactPage = function () {
 		    $(document).ready(function(){
 		      panorama = GMaps.createPanorama({
 		        el: '#panorama',
-		        lat : 40.748866,
-		        lng : -73.988366
+		        lat : 43.814930,
+		        lng : -79.349759
 		      });
 		    });
 		}        
